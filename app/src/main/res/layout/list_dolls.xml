@@ -6,8 +6,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        >
+        android:padding="5dp">
 
         <ImageView
             android:layout_width="100dp"
@@ -24,30 +23,30 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/doll_name"
+                android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginBottom="8dp"
                 android:text="Nama Boneka"
-                android:textSize="18dp"
+                android:textSize="24dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/nama_creator"
+                android:id="@+id/txtCreator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:text="Nama Creator"
-                android:textSize="14dp"
+                android:textSize="20dp"
                 android:layout_marginBottom="8dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/doll_desc"
+                android:id="@+id/txtDescription"
                 android:layout_marginLeft="4dp"
                 android:text="Doll Description"
-                android:textSize="12dp"/>
+                android:textSize="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

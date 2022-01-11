@@ -6,36 +6,39 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DBNAME = "BlueDoll.db";
+    public final String USERS_TABLE = "Users";
+    public final String DOLLS_TABLE = "Dolls";
 
     public DBHelper(Context context){
 
-        super(context,DBNAME,null,1);
+        super(context,"Project Blue Doll",null,1);
 
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String users= "CREATE TABLE Users(UserID TEXT PRIMARY KEY," +
+        String users= "CREATE TABLE "+ USERS_TABLE + "(" +
+                "UserID TEXT PRIMARY KEY," +
                 "UserName TEXT," +
                 "UserEmail TEXT," +
                 "UserPassword TEXT," +
                 "UserGender TEXT," +
                 "UserRole TEXT)";
         db.execSQL(users);
-        String dolls= "CREATE TABLE Dolls(DollID TEXT PRIMARY KEY AUTOINCREMENT," +
+        String dolls= "CREATE TABLE "+ DOLLS_TABLE + "(" +
+                "DollID integer PRIMARY KEY AUTOINCREMENT," +
                 "DollName TEXT," +
                 "DollDescription TEXT," +
-                "DollImage Text," +
-                "FOREIGN KEY (UserID) REFERENCES Users (UserID))";
+                "DollImage BLOB," +
+                "UserID TEXT REFERENCES Users (UserID))";
         db.execSQL(dolls);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        String dropTableUsers= "DROP TABLE IF EXISTS Users";
+        String dropTableUsers= "DROP TABLE IF EXISTS "+ USERS_TABLE;
         db.execSQL(dropTableUsers);
-        String dropTableDolls= "DROP TABLE IF EXISTS Dolls";
+        String dropTableDolls= "DROP TABLE IF EXISTS "+ DOLLS_TABLE;
         db.execSQL(dropTableDolls);
     }
 

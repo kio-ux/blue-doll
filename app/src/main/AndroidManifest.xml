@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bluedoll">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BlueDollProject.NoActionBar">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAmgZdTFkdvLKctwwdDH-Ywt4wYBhY4Ffw" />
+
         <activity
             android:name=".views.InsertDollsActivity"
             android:exported="false" />
@@ -20,10 +28,12 @@
             android:exported="false" />
         <activity
             android:name=".views.RegisterActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".views.LoginActivity"
-            android:exported="false" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".views.MainActivity"
             android:exported="true">

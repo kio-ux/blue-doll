@@ -33,20 +33,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         android:padding="10dp">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="FullName"
-            android:layout_marginLeft="8dp"/>
-
-        <EditText
-            android:id="@+id/fullNameText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/rectangle_putih_edit_text"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -62,6 +48,22 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:background="@drawable/rectangle_putih_edit_text"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FullName"
+            android:layout_marginLeft="8dp"/>
+
+        <EditText
+            android:id="@+id/fullNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_putih_edit_text"/>
+
 
         <TextView
             android:id="@+id/textView5"

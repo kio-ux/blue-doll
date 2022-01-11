@@ -1,53 +1,36 @@
 package com.example.bluedoll.models;
 
 public class Dolls {
-    private String id;
-    private String namaBoneka;
-    private String imageDolls;
+    private Integer id;
+    private String dollName;
     private String dollDesc;
     private String dollCreator;
+    private byte [] dollImage;
 
-    public Dolls(String id, String namaBoneka, String imageDolls, String dollDesc, String dollCreator) {
+
+    public Dolls(Integer id, String dollName, String dollDesc, String dollCreator, byte [] dollImage) {
         this.id = id;
-        this.namaBoneka = namaBoneka;
-        this.imageDolls = imageDolls;
+        this.dollName = dollName;
         this.dollDesc = dollDesc;
         this.dollCreator = dollCreator;
+        this.dollImage = dollImage;
     }
 
-    @Override
-    public String toString() {
-        return "Dolls{" +
-                "id='" + id + '\'' +
-                ", namaBoneka='" + namaBoneka + '\'' +
-                ", imageDolls='" + imageDolls + '\'' +
-                ", dollDesc='" + dollDesc + '\'' +
-                ", dollCreator='" + dollCreator + '\'' +
-                '}';
-    }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getNamaBoneka() {
-        return namaBoneka;
+    public String getDollName() {
+        return dollName;
     }
 
-    public void setNamaBoneka(String namaBoneka) {
-        this.namaBoneka = namaBoneka;
-    }
-
-    public String getImageDolls() {
-        return imageDolls;
-    }
-
-    public void setImageDolls(String imageDolls) {
-        this.imageDolls = imageDolls;
+    public void setDollName(String dollName) {
+        this.dollName = dollName;
     }
 
     public String getDollDesc() {
@@ -66,12 +49,11 @@ public class Dolls {
         this.dollCreator = dollCreator;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Dolls dolls = (Dolls) o;
-        return getId().equals(dolls.getId()) && getNamaBoneka().equals(dolls.getNamaBoneka()) && getImageDolls().equals(dolls.getImageDolls()) && getDollDesc().equals(dolls.getDollDesc()) && getDollCreator().equals(dolls.getDollCreator());
+    public byte[] getDollImage() {
+        return dollImage;
     }
 
+    public void setDollImage(byte[] dollImage) {
+        this.dollImage = dollImage;
+    }
 }

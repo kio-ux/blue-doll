@@ -6,11 +6,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".views.ViewDollsFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40dp"
+        android:text="List Dolls" />
+
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/reyclerView"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:itemCount="2"
-        tools:listitem="@layout/dolls_row"/>
+        android:text="No Dolls Available"
+        android:textSize="34dp"
+        android:gravity="center"
+        android:id="@+id/txtEmpty">
+    </TextView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/dollsListView">
+    </ListView>
+
+
 </FrameLayout>

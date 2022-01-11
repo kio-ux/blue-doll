@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/img_doll1.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_doll_details.xml" value="0.23020833333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.2598958333333333" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/layout/dolls_row.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/layout/fragment_about_us.xml" value="0.2598958333333333" />
+        <entry key="app/src/main/res/layout/fragment_view_dolls.xml" value="0.20520833333333333" />
         <entry key="app/src/main/res/menu/menu_bar.xml" value="0.23020833333333332" />
       </map>
     </option>
